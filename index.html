@@ -86,10 +86,22 @@
       <h2>Записаться</h2>
       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="date" name="date" value="2020-10-28">
-        <input type="time" name="time" value="10:00">
-        <input type="text" name="name" value="" placeholder="Борода">
-        <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+        <p>
+          <label for="appointmeny-date">Дата</label>
+          <input id="appointmeny-date" type="date" name="date" value="2020-10-28">
+        </p>
+        <p>
+          <label for="appointmeny-time">Время</label>
+          <input id="appointmeny-time" type="time" name="time" value="10:00">
+        </p>
+        <p>
+          <label for="appointmeny-name">Ваше имя</label>
+          <input id="appointmeny-name" type="text" name="name" value="" placeholder="Борода">
+        </p>
+        <p>
+          <label for="appointmeny-phone">Телефон</label>
+          <input id="appointmeny-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+        </p>
       </form>
     </section>
   </main>
