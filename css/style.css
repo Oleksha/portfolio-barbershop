@@ -15,6 +15,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-page {
+  color: #000000;
+  
+  background-color: #f9f6f3;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -78,7 +87,7 @@ a {
 .index-columns {
   color: #000000;
   
-  background-color: #f8f5f2;
+  background-color: #f9f6f3;
   background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
@@ -157,7 +166,7 @@ a {
 .modal {
   color: #000000;
   
-  background-color: #f8f3f0;
+  background-color: #f9f6f3;
   background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
