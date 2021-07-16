@@ -28,6 +28,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font: inherit;
   
@@ -112,15 +135,55 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   width: 620px;
 }
 
 .user-navigation {
+  display: flex;
   width: 140px;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: "";
+  
+  position: absolute;
+  top: 28px;
+  left: 24px;
+  
+  width: 16px;
+  height: 18px;
+  
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+  opacity: 1;
 }
 
 .inner-page .user-navigation {
   margin-left: auto;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 25px 20px;
+  
+  vertical-align: middle;
+  color: #ffffff;
 }
 
 .site-navigation a:hover,
@@ -128,11 +191,6 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus{
   background-color: #242424;
-}
-
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
 }
 
 .features {
