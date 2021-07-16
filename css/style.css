@@ -212,8 +212,33 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item h3 {
+  position: relative;
+  
+  margin-top: 0;
+  margin-bottom: 60px;
+  
   font-size: 30px;
   line-height: 42px;
+}
+
+.feature-item h3::after {
+  content: "";
+  
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  
+  background-color: #ffffff;
+  
+  transform: rotate(45deg);
+}
+
+.feature-item p {
+  margin: 0 10px;
 }
 
 .index-columns {
@@ -225,9 +250,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
   
   background-color: #f9f6f3;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image: 
+    url("../img/line.png"),
+    url("../img/pattern-light.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
