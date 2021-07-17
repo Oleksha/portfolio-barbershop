@@ -322,6 +322,23 @@ input[type="radio"].visually-hidden {
   height: 164px;
 }
 
+.gallery-button {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-button-back {
+  left: 0;
+}
+
+.gallery-button-next {
+  right: 0;
+}
+
 .contacts {
   width: 380px;
 }
