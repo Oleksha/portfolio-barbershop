@@ -410,6 +410,8 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
+  
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
@@ -418,12 +420,29 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs a {
+  position: relative;
+  margin-right: 40px;
   color: #000000;
 }
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
   text-decoration: underline;
+}
+
+.breadcrumbs a::after {
+  position: absolute;
+  content: "";
+  
+  right: -24px;
+  top: 5px;
+  
+  width: 8px;
+  height: 8px;
+  
+  background-color: #000000;
+  
+  transform: rotate(45deg);
 }
 
 .breadcrubs-current {
@@ -897,3 +916,4 @@ input[type="radio"].visually-hidden {
 .modal-map p {
   margin: 0;
 }
+
