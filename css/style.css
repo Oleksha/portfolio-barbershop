@@ -154,7 +154,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.site-navigation-current a:not([href]) {
+.site-navigation-current a:not([href]):hover {
     background-color: #000000;
 }
 
