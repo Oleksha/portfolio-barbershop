@@ -649,11 +649,22 @@ input[type="radio"].visually-hidden {
 .pagination-list {
   margin: 0;
   padding: 0;
+  display: flex;
   
   list-style: none;
 }
 
+.pagination-item {
+  margin-right: 7px;
+}
+
 .pagination-item a {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
+  
   color: #ffffff;
   
   background-color: #000000;
@@ -733,7 +744,8 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-footer {
-  margin-top: 45px;
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, black, transparent), url(../img/pattern-dark.jpg);
 }
 
 .main-footer .container {
