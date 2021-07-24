@@ -144,10 +144,28 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.site-navigation {
+.site-navigation {  
   display: flex;
   flex-wrap: wrap;
   width: 620px;
+}
+
+.site-navigation-current {
+  position: relative;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: #000000;
+}
+
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    height: 5px;
+    background-color: #ffffff;
 }
 
 .user-navigation {
