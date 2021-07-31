@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Барбершоп «Бородинский»</title>
+  <title>Магазин барбершопа «Бородинский»</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
-        <li><a href="price.html">Прайс-лист</a></li>
+        <li class="site-navigation-current"><a>Прайс-лист</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
@@ -27,8 +27,55 @@
       </ul>
     </nav>
   </header>
-  
+  <main class="container">
+    <h1 class="page-title">Прайс-лист</h1>
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li class="breadcrubs-current">Прайс-лист</li>
+    </ul>
+    <section class="inner-content">
+      <h2 class="big-heading">Истинно мужская классика</h2>
+      <div class="inner-columns">
+        <div class="inner-column-left">
+          <h3>Мы используем только<br>лучшие средства:</h3>
+          <ul class="custom-list-1">
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+          </ul>
+        </div>
+        <div class="inner-column-right">
+          <h3>Цены на услуги наших<br>мастеров:</h3>
+          <table class="custom-table-1">
+            <tr>
+              <td>Стрижка</td>
+              <td>1500 ₽</td>
+            </tr>
+            <tr>
+              <td>Стрижка бороды</td>
+              <td>500 ₽</td>
+            </tr>
+            <tr>
+              <td>Накрутка усов</td>
+              <td>350 ₽</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="inner-columns">
+        <h3>Несколько слов о нас:</h3>
+        <div class="inner-column-left">          
+          <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+        </div>
+        <div class="inner-column-right">
+          <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="main-footer">
+    <div class="shadow"></div>
     <div class="container">
       <p class="footer-contacts">
         Барбершоп «Бородинский»<br>
@@ -74,7 +121,7 @@
       </p>
       <p>
         <label class="visually-hidden" for="user-password">Пароль</label>
-        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="********">
+        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="ПАРОЛЬ">
       </p>
       <p class="login-help">
         <label class="login-checkbox">
@@ -88,5 +135,6 @@
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <script src="js/main.js"></script>
 </body>
 </html>
